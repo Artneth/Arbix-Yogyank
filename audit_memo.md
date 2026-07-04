@@ -18,5 +18,6 @@ and are fitted only on the training data.
 *   The entire pipeline is now saved together.
 
 ## 3. What limitations remain?
+*   I would preprocess the data and understand the correlations and interaction between different features and the target. 
 *   I do not fully trust the Out-Of-Time split solely via 'shuffle=False'.
 *   I would implement a temporal split on a specific datetime column (e.g., training on Jan-Oct, validating on Nov-Dec). Also, I would integrate SHAP (SHapley Additive exPlanations) to give stable reason codes for why a farmer received a score.
